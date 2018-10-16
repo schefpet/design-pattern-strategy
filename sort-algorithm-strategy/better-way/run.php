@@ -20,7 +20,7 @@ try {
             $strategy = new MergeSortStrategy();
             break;
         default:
-            throw new Exception("Sorting algorithm {$this->sortingAlgorithm} does not exist.");
+            throw new Exception("Sorting algorithm {$options['a']} does not exist.");
 
     }
 
