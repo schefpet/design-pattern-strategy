@@ -9,6 +9,11 @@ final class RubberDuck extends AbstractDuck
 
     public function fly()
     {
-        // Neumím létat.
+        // Can not fly.
+    }
+
+    public function eat()
+    {
+        // Can not eat.
     }
 }

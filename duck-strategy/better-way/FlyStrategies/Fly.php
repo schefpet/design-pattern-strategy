@@ -7,6 +7,6 @@ class Fly implements FlyStrategyInterface
 
     public function fly()
     {
-        echo "Letím";
+        echo "I am flying.";
     }
 }

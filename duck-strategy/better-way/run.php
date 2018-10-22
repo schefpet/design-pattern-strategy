@@ -8,8 +8,7 @@ require_once(dirname(__FILE__) . "/DisplayStrategies/CityDuck.php");
 require_once(dirname(__FILE__) . "/DisplayStrategies/WildDuck.php");
 require_once(dirname(__FILE__) . "/DisplayStrategies/RubberDuck.php");
 
-require_once(dirname(__FILE__) . "/EatStrategies/Meat.php");
-require_once(dirname(__FILE__) . "/EatStrategies/Vegetable.php");
+require_once(dirname(__FILE__) . "/EatStrategies/Eat.php");
 require_once(dirname(__FILE__) . "/EatStrategies/DoNotEat.php");
 
 require_once(dirname(__FILE__) . "/FlyStrategies/Fly.php");
@@ -22,14 +21,14 @@ try {
     switch ($options['t']){
         case 'wild':
             $displayStrategy = new \DisplayStrategies\WildDuck();
-            $eatStrategy = new \EatStrategies\Meat();
+            $eatStrategy = new \EatStrategies\Eat();
             $flyStrategy = new \FlyStrategies\Fly();
 
             $duck = new Duck($flyStrategy, $eatStrategy, $displayStrategy);
             break;
         case 'city':
             $displayStrategy = new \DisplayStrategies\CityDuck();
-            $eatStrategy = new \EatStrategies\Vegetable();
+            $eatStrategy = new \EatStrategies\Eat();
             $flyStrategy = new \FlyStrategies\Fly();
 
             $duck = new Duck($flyStrategy, $eatStrategy, $displayStrategy);

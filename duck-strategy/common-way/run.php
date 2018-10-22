@@ -30,9 +30,10 @@ try {
         echo "\n";
     }
 
-    $duck->fly();
-    echo "\n";
-
+    if ($duck instanceof WildDuck || $duck instanceof CityDuck) {
+        $duck->fly();
+        echo "\n";
+    }
 } catch (Exception $exception) {
     var_dump($exception->getMessage());
 }

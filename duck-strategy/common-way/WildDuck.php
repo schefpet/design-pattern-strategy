@@ -4,16 +4,16 @@ final class WildDuck extends AbstractDuck
 {
     public function display()
     {
-        echo "Jsem divoká kachna.";
+        echo "I am wild duck.";
     }
 
     public function eat()
     {
-        echo "Jím.";
+        echo "I am eating.";
     }
 
     public function fly()
     {
-        echo "Létám";
+        echo "I am flying.";
     }
 }

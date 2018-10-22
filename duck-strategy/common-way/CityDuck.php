@@ -9,11 +9,11 @@ final class CityDuck extends AbstractDuck
 
     public function eat()
     {
-        echo "Jím.";
+        echo "I am eating.";
     }
 
     public function fly()
     {
-        echo "Létám";
+        echo "I am flying.";
     }
 }

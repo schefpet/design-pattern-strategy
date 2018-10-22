@@ -7,6 +7,6 @@ class DoNotFly implements FlyStrategyInterface
 
     public function fly()
     {
-        // Objekt, který implementuje tuto strategii nelétá.
+        // Object does not fly.
     }
 }

@@ -7,6 +7,6 @@ class WildDuck implements DisplayStrategyInterface
 
     public function display()
     {
-        echo "Jsem městská kachna.";
+        echo "I am wild duck.";
     }
 }

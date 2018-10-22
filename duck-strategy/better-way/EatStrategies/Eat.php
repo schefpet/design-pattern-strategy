@@ -2,11 +2,11 @@
 
 namespace EatStrategies;
 
-class Meat implements EatStrategyInterface
+class Eat implements EatStrategyInterface
 {
 
     public function eat()
     {
-        echo "Jím maso.";
+        echo "I am eating.";
     }
 }
